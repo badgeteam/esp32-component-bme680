@@ -1,5 +1,7 @@
 idf_component_register(
   SRCS "bme680.c"
   INCLUDE_DIRS include
-  REQUIRES "bus-i2c"
+  PRIV_REQUIRES
+    bus-i2c
+    driver
 )
